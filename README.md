@@ -79,9 +79,8 @@ and the boundaries where things break.
 
 <div align="center">
 
-![James's GitHub stats](https://github-readme-stats.vercel.app/api?username=JamesNguyen281&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=JamesNguyen281&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
+<!-- Generated daily by lowlighter/metrics — see .github/workflows/metrics.yml -->
+![Metrics](./github-metrics.svg)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=JamesNguyen281&theme=tokyonight&hide_border=true)
 

@@ -1,0 +1,49 @@
+name: Metrics
+
+on:
+  # Refresh once a day
+  schedule:
+    - cron: "0 0 * * *"
+  # Allow manual run from the Actions tab
+  workflow_dispatch:
+  # Regenerate when the workflow itself changes
+  push:
+    branches: ["main"]
+    paths: [".github/workflows/metrics.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
+        with:
+          # A classic PAT stored as repo secret METRICS_TOKEN (scope: repo)
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: JamesNguyen281
+          filename: github-metrics.svg
+          template: classic
+          theme: tokyonight
+          config_timezone: Asia/Ho_Chi_Minh
+
+          # --- Core sections ---
+          base: header, activity, community, repositories, metadata
+
+          # --- Top languages (in-depth) ---
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+
+          # --- Year-long contribution calendar (isometric) ---
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # --- Coding habits & activity rhythm ---
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
