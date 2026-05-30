@@ -65,17 +65,6 @@ and the boundaries where things break.
 
 ---
 
-## 🚀 Featured Projects
-
-| Project | Description | Stack |
-|---------|-------------|-------|
-| 🏥 [**TTYTKINHMON**](https://github.com/JamesNguyen281/TTYTKINHMON) | Hospital Information System (HIS) CMS — graduation capstone | `HTML` `Web` |
-| 🎮 [**Zero-Hour-Necro-Siege**](https://github.com/JamesNguyen281/Zero-Hour-Necro-Siege) | Strategy/siege game built for a university course | `C#` |
-| 🖼️ [**image-contrast-enhancement**](https://github.com/JamesNguyen281/image-contrast-enhancement) | Image processing with Histogram Equalization & CLAHE | `Python` `OpenCV` |
-| 📱 [**Phone-Store**](https://github.com/JamesNguyen281/Phone-Store) | E-commerce phone store application | `TypeScript` |
-
----
-
 ## 🌱 Currently Learning
 
 - 🐧 **Linux internals** — processes, namespaces, systemd, the boot chain
