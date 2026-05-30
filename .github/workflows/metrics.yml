@@ -26,7 +26,6 @@ jobs:
           user: JamesNguyen281
           filename: github-metrics.svg
           template: classic
-          theme: tokyonight
           config_timezone: Asia/Ho_Chi_Minh
 
           # --- Core sections ---
