@@ -21,8 +21,9 @@ jobs:
       - name: Generate metrics
         uses: lowlighter/metrics@latest
         with:
-          # A classic PAT stored as repo secret METRICS_TOKEN (scope: repo)
-          token: ${{ secrets.METRICS_TOKEN }}
+          # Built-in Actions token — works with GraphQL and can read public data.
+          # No PAT needed for a public profile. (Fine-grained PATs do NOT work here.)
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: JamesNguyen281
           filename: github-metrics.svg
           template: classic
