@@ -32,9 +32,11 @@ jobs:
           # --- Core sections ---
           base: header, activity, community, repositories, metadata
 
-          # --- Top languages (in-depth) ---
+          # --- Top languages ---
+          # NOTE: indepth analysis is intentionally OFF — it clones every repo and
+          # runs ~10 min, which races the committer (422 "sha wasn't supplied") and
+          # is overkill for this profile. Plain language stats render fine.
           plugin_languages: yes
-          plugin_languages_indepth: yes
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
 
